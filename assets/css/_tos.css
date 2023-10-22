@@ -20,9 +20,7 @@
 .tos-content h2 {
     font-size: 4rem;
     font-weight: var(--font-weight-bold);
-    background: var(--color-linear-3);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: var(--color-text-light);
     line-height: 1;
     margin-bottom: 3rem;
 }
