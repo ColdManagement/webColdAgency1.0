@@ -24,7 +24,7 @@
     justify-content: space-between;
 }
 
-.navigation .nav-right {
+.navigation .navigation-right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -113,7 +113,7 @@
 /*  834px - 1068px - Laptop Header */
 @media screen and (min-width: 834px) and (max-width: 1068px) {
 
-    .navigation .nav-right {
+    .navigation .navigation-right {
         gap: 3rem;
     }
 
@@ -146,7 +146,7 @@
         padding: 0 2.5rem 0 1.5rem;
     }
 
-    .navigation .nav-right {
+    .navigation .navigation-right {
         gap: 2.5rem;
     }
 
@@ -199,7 +199,7 @@
         padding: 0 2.5rem 0 1.5rem;
     }
 
-    .navigation .nav-right {
+    .navigation .navigation-right {
         gap: 0rem;
     }
 
