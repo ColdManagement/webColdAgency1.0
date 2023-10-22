@@ -106,22 +106,3 @@ faqQuestions.forEach((faqQuestion) => {
     faqQuestion.classList.toggle("active");
   });
 });
-
-
-
-// Announcement
-const announcementClose = document.querySelector(".announcement-close");
-const announcementSection = document.querySelector("#announcement");
-
-announcementClose.addEventListener("click", () => {
-  announcementSection.classList.add("hidden");
-  sessionStorage.setItem("announcementHidden", "true");
-});
-
-// Checking of refresh
-window.addEventListener("load", () => {
-  const isAnnouncementHidden = sessionStorage.getItem("announcementHidden");
-  if (isAnnouncementHidden === "true") {
-    announcementSection.classList.add("hidden");
-  }
-});

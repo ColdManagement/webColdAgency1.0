@@ -4,20 +4,19 @@
     top: -0.1px;
     left: 0;
     z-index: 99;
-    height: 9rem;
+    height: 8rem;
     width: 100%;
     padding: 0 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-btn-dark-header);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 }
 
 .navigation {
     z-index: 100;
-    height: 9rem;
+    height: 8rem;
     width: 129rem;
     display: flex;
     flex-wrap: wrap;
@@ -25,22 +24,50 @@
     justify-content: space-between;
 }
 
+.navigation .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4rem;
+}
+
+.navigation .logo-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+}
+
 .navigation .logo {
-    height: 5rem;
+    height: 2.3rem;
     width: auto;
     display: flex;
+    margin-bottom: 0.4rem;
+}
+
+.navigation .logo-title {
+    font-size: 2.8rem;
+    background: var(--color-linear-1);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: var(--font-weight-black);
+    font-family: var(--font-family-2);
+}
+
+.navigation .logo-title span {
+    color: var(--color-text-light);
 }
 
 .navigation .navbar {
     display: flex;
-    gap: 3.5rem;
+    gap: 4rem;
 }
 
 .navigation .navbar a {
     font-size: 1.6rem;
     color: var(--color-text-hover);
-    font-weight: var(--font-weight-bold);
-    transition: 0.3s ease;
+    font-weight: var(--font-weight-normal);
+    transition: 0.3s;
 }
 
 .navigation .navbar a:hover {
@@ -85,6 +112,14 @@
 
 /*  834px - 1068px - Laptop Header */
 @media screen and (min-width: 834px) and (max-width: 1068px) {
+
+    .navigation .nav-right {
+        gap: 3rem;
+    }
+
+    .navigation .navbar {
+        gap: 3rem;
+    }
 }
 
 
@@ -111,8 +146,16 @@
         padding: 0 2.5rem 0 1.5rem;
     }
 
+    .navigation .nav-right {
+        gap: 2.5rem;
+    }
+
     .navigation .logo {
-        height: 3.5rem;
+        height: 2rem;
+    }
+
+    .navigation .logo-title {
+        font-size: 2.5rem;
     }
 
     .navigation .btn-header {
@@ -156,8 +199,17 @@
         padding: 0 2.5rem 0 1.5rem;
     }
 
+    .navigation .nav-right {
+        gap: 0rem;
+    }
+
     .navigation .logo {
-        height: 3rem;
+        height: 1.8rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .navigation .logo-title {
+        font-size: 2.3rem;
     }
 
     .navigation .btn-header {
