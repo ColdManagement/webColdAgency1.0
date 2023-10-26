@@ -1,6 +1,10 @@
 {
   "rewrites": [
     { "source": "/home", "destination": "/index.html" },
+    { "source": "/apply", "destination": "/apply.html" },
+    { "source": "/application", "destination": "/apply.html" },
+    { "source": "/model-application", "destination": "/apply.html" },
+    { "source": "/contact", "destination": "/apply.html" },
     { "source": "/terms-of-service", "destination": "/tos.html" },
     { "source": "/terms", "destination": "/tos.html" },
     { "source": "/tos", "destination": "/tos.html" },

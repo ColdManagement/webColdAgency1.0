@@ -2,7 +2,6 @@
 .footer {
 	height: auto;
 	width: 100%;
-	background-color: var(--color-dark);
 	
 }
 
@@ -20,7 +19,7 @@
 	font-size: 1.8rem;
 	line-height: 2;
 	color: var(--color-text-light);
-	font-weight: var(--font-weight-bold);
+	font-weight: var(--font-weight-normal);
 	text-align: left;
 }
 
@@ -28,21 +27,19 @@
 	line-height: 2;
 	font-size: 1.6rem;
     color: var(--color-text-dark);
-    font-weight: var(--font-weight-bold);
-    transition: 0.3s ease;
+    font-weight: var(--font-weight-normal);
+    transition: 0.3s;
 }
 
 .footer-navigation a:hover {
-	color: var(--color-text-light);
-	text-shadow: 0 0 8px rgb(252, 252, 252);
+    color: var(--color-text-light);
+    text-shadow: 0 0 4px rgb(252, 252, 252);
 }
 
 .footer-navigation i img {
-	height: 7rem;
+	height: 4rem;
 	width: auto;
 	display: flex;
-	margin-left: -0.8rem;
-	margin-bottom: 0.5rem;
 }
 
 .footer-navigation p {
@@ -71,7 +68,7 @@
 	width: 25%;
 	height: 16.5rem;
 	gap: 1.5rem;
-	padding-right: 3rem;
+	padding-right: 1rem;
 }
 
 
@@ -79,17 +76,17 @@
 .footer-copyright {
 	height: auto;
 	width: 100%;
-	padding: 3rem 0;
+	padding: 2rem 0;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .footer-copyright .copyright-text p {
 	font-size: 1.6rem;
 	color: var(--color-text-dark);
 	font-weight: var(--font-weight-normal);
-	text-align: left;
+	text-align: center;
 }
 
 .footer-copyright a {
@@ -97,16 +94,19 @@
 	color: var(--color-primary);
 	font-weight: var(--font-weight-normal);
 	text-align: left;
-	transition: 0.3s ease;
+	transition: 0.3s;
 }
 
 .footer-copyright a:hover {
-	text-shadow: 0 0 8px var(--color-primary);
+	text-shadow: 0 0 8px var(--color-secondary);
 }
 
 /*  834px - 1068px - Laptop Footer */
 @media screen and (min-width: 834px) and (max-width: 1068px) {
 
+	.footer-navigation .item-4 {
+		padding-right: 0rem;
+	}
 }
 
 
@@ -125,12 +125,15 @@
 	}
 
 	.footer-navigation i img {
-		height: 5rem;
-		margin-left: -0.5rem;
+		height: 2.5rem;
 	}
 
 	.footer-navigation p {
 		font-size: 1.4rem;
+	}
+
+	.footer-navigation .item-4 {
+		padding-right: 0rem;
 	}
 
 	/* Copyright Section */
@@ -178,14 +181,6 @@
 	}
 
 	/* Copyright Section */
-	.footer-copyright .copyright-text {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: flex-start;
-	}
-
 	.footer-copyright .copyright-text p {
 		font-size: 1.4rem;
 		padding-bottom: 1rem;

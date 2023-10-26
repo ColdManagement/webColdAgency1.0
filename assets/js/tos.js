@@ -21,11 +21,13 @@ document.onkeydown = (e) => {
 ScrollReveal({
   reset: false,
   distance: '200px',
-  duration: 1500,
+  duration: 2000,
   delay: 200
 });
 
-ScrollReveal().reveal('.tos', { origin: 'top', distance: '0px', delay: 200 });
+ScrollReveal().reveal('.tos', { origin: 'right', distance: '0px', delay: 200 });
+
+
 
 // Navbar anchor + hiding # in URL
 $('a[href^="#"]').on('click', function (event) {

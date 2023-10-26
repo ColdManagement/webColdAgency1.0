@@ -1,3 +1,25 @@
+/* Visuals Starting */
+#eclipse-tos-top {
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    z-index: -20;
+}
+
+#eclipse-tos-right1 {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: -20;
+}
+
+#eclipse-tos-left1 {
+    position: absolute;
+    top: 550px;
+    left: 0;
+    z-index: -20;
+}
+
 /* Tos section */
 .tos {
     color: var(--color-text-light);
@@ -5,31 +27,45 @@
     justify-content: center;
     align-items: center;
     min-height: 60rem;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding: 5rem 0 10rem 0;
 }
 
 .tos-content {
     width: 100%;
     margin: auto;
-    padding: 3rem;
-    background-color: var(--color-btn-dark);
+    padding: 3rem 3rem;
     border-radius: 16px;
+    background-color: var(--color-btn-dark);
+    border: 2px solid var(--color-border);
 }
 
 .tos-content h2 {
     font-size: 4rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-text-light);
+    background: var(--color-linear-3);
+    -webkit-background-clip: text;
+    color: transparent;
     line-height: 1;
     margin-bottom: 3rem;
+}
+
+.tos-content h2 span {
+    background: var(--color-linear-1);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .tos-content h3 {
     font-size: 1.6rem;
     font-weight: var(--font-weight-bold);
-    color: var(--color-primary);
+    color: var(--color-text-hover);
     margin-bottom: 2rem;
+}
+
+.tos-content h3 span {
+    background: var(--color-linear-1);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .tos-content h4 {
@@ -49,7 +85,7 @@
 .tos-content p {
     font-size: 1.6rem;
     line-height: 1.2;
-    color: var(--color-text-light);
+    color: var(--color-text-hover);
     text-align: left;
     margin-bottom: 1rem;
 }
@@ -86,6 +122,10 @@
 /*  834px - 1068px - Laptop Sections */
 @media screen and (min-width: 834px) and (max-width: 1068px) {
 
+    /* Visuals Starting */
+    #eclipse-tos-top {
+        left: -150px;
+    }
 }
 
 
@@ -93,9 +133,13 @@
 /*  576px - 833px - Tablet Sections */
 @media screen and (min-width: 576px) and (max-width: 833px) {
 
+    /* Visuals Starting */
+    #eclipse-tos-top {
+        left: -250px;
+    }
+
     .tos {
-        padding-top: 5rem;
-        padding-bottom: 7.5rem;
+        padding: 2.5rem 0 5rem 0;
     }
 
     .tos-content h2 {
@@ -117,9 +161,17 @@
 /*  575px and Lower - Mobile Sections */
 @media screen and (max-width: 575px) {
 
+    /* Visuals Starting */
+    #eclipse-tos-top {
+        left: -150px;
+    }
+
     .tos {
-        padding-top: 2.5rem;
-        padding-bottom: 5rem;
+        padding: 2.5rem 0 5rem 0;
+    }
+
+    .tos-content {
+        padding: 2rem 2rem;
     }
 
     .tos-content h2 {

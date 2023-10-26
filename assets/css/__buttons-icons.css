@@ -7,14 +7,14 @@
     border: none;
     border-radius: 10px;
     text-align: center;
-    transition: 0.3s ease;
+    transition: 0.3s;
     font-family: var(--font-family-1);
     font-weight: var(--font-weight-bold);
     font-size: 1.8rem;
     cursor: pointer;
 }
 
-/* Header button Starting*/
+/* Header button*/
 .btn-header {
     background: var(--color-primary);
     color: var(--color-dark);
@@ -25,64 +25,71 @@
     background: var(--color-secondary);
 }
 
-/* Get Started button Starting*/
+/* Get Started button*/
 .btn-getstarted {
     background: var(--color-primary);
-    box-shadow: 0 0 10px rgba(1, 233, 254, 0.75);
     color: var(--color-dark);
-    width: 19.5rem;
+    transition: 0.3s;
+    padding: 1.2rem 2.2rem;
+    width: 21rem;
 }
 
 .btn-getstarted:hover {
-    transform: scale(1.02);
+    background: var(--color-secondary);
 }
 
-/* Order Golden button Starting*/
-.btn-ordergolden {
+/* About button*/
+.btn-about {
     background: var(--color-primary);
-    box-shadow: 0 0 10px rgba(1, 233, 254, 0.75);
     color: var(--color-dark);
-    width: 17rem;
+    transition: 0.3s;
+    padding: 1.2rem 2.2rem;
+    width: 21rem;
 }
 
-.btn-ordergolden:hover {
-    transform: scale(1.02);
+.btn-about:hover {
+    background: var(--color-secondary);
 }
 
-/* Order Silver button Starting*/
-.btn-ordersilver {
-    background: linear-gradient(to left, var(--color-text-light), var(--color-text-hover));
-    box-shadow: 0 0 10px rgba(203, 203, 204, 0.75);
-    color: var(--color-dark);
-    width: 100%;
-}
-
-.btn-ordersilver:hover {
-    transform: scale(1.02);
-}
-
-/* Contact button Starting*/
-.btn-contact {
-    background-color: rgb(114, 137, 218);
-    box-shadow: 0 0 10px rgba(114, 137, 218, 0.75);
-    color: var(--color-text-light);
+/* Services button*/
+.btn-services {
+    color: var(--color-text-dark);
+    transition: 0.3s;
     width: auto;
-    padding: 1.2rem 1.6rem;
-    border-radius: 32px;
+}
 
+.btn-services:hover {
+    color: var(--color-text-light);
+}
+
+/* Contact button*/
+.btn-contact {
+    background: var(--color-primary);
+    color: var(--color-dark);
+    transition: 0.3s;
+    padding: 1.2rem 2.2rem;
+    width: 21rem;
 }
 
 .btn-contact:hover {
-    background-color: rgb(78, 93, 148);
-    transform: scale(1.02);
+    background: var(--color-secondary);
 }
 
-.btn-contact:hover,
-.btn-contact:hover .discord-icon {
-    color: var(--color-text-hover);
+/* Form Apply button*/
+.btn-formapply {
+    background: var(--color-primary);
+    color: var(--color-dark);
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-/* Black Bar button and icon Starting*/
+.btn-formapply:hover {
+    background: var(--color-secondary);
+}
+
+/* Black Bar button and icon*/
 #btn-blackbar {
     display: none;
     cursor: pointer;
@@ -103,17 +110,9 @@
     font-size: 3rem;
 }
 
-/* Icons Starting */
-.telegram-icon {
-    font-size: 1.6rem;
-    color: var(--color-text-light);
-    margin-right: 1.2rem;
-    transition: 0.3s ease;
-}
-
-.features-icon {
-    font-size: 1.8rem;
-    color: var(--color-text-light);
+/* Icons */
+.rightarrow-icon {
+    margin-left: 1.2rem;
 }
 
 .vouchesavatar-icon {
@@ -126,7 +125,9 @@
     width: 2.4rem;
     height: auto;
     font-size: 1.6rem;
-    color: #ff0014;
+    background: var(--color-linear-1-2);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .downarrow-icon {
@@ -140,4 +141,36 @@
     color: transparent;
     font-size: 1.3rem;
     margin: 0 0.3rem;
+}
+
+/*  834px - 1068px - Laptop Header */
+@media screen and (min-width: 834px) and (max-width: 1068px) {}
+
+/*  576px - 833px - Tablet Header */
+@media screen and (min-width: 576px) and (max-width: 833px) {
+
+    /* Header button*/
+    .btn-header {
+        padding: 0.8rem 1.6rem;
+        font-size: 1.4rem;
+    }
+
+    /* About button*/
+    .btn-about {
+        width: 100%;
+    }
+}
+
+/*  575px and Lower - Mobile Header */
+@media screen and (max-width: 575px) {
+
+    /* Header button*/
+    .btn-header {
+        display: none;
+    }
+
+    /* About button*/
+    .btn-about {
+        width: 100%;
+    }
 }

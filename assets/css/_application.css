@@ -1,0 +1,217 @@
+/* Visuals Starting */
+#eclipse-apply-top {
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    z-index: -20;
+}
+
+/* Application section */
+#application {
+    position: relative;
+}
+
+.application {
+    padding: 5rem 0 10rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.application .card {
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-radius: 16px;
+    background: var(--color-btn-dark);
+    border: 2px solid var(--color-border);
+}
+
+.application .card-left {
+    position: relative;
+    width: 50%;
+    height: auto;
+}
+
+.application .card .contact-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 33%;
+    z-index: 0;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.application .card-right {
+    width: 50%;
+    height: 100%;
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.application #contact-form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.application #contact-form h2 {
+    font-size: 2.4rem;
+    font-weight: var(--font-weight-bold);
+    background: var(--color-linear-3);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.application #contact-form h2 span {
+    font-weight: var(--font-weight-bold);
+    background: var(--color-linear-1);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.application #contact-form .sub-title {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+.application #contact-form label {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: var(--font-weight-normal);
+    color: var(--color-text-hover);
+}
+
+.application #contact-form input {
+    width: 100%;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+    border: 0;
+    border-radius: 12px;
+    outline: 1px solid var(--color-border);
+    font-size: 1.6rem;
+    font-weight: var(--font-weight-normal);
+    color: var(--color-text-hover);
+    background: var(--color-btn-light);
+    transition: 0.3s;
+}
+
+.application #contact-form input:focus {
+    outline: 1px solid var(--color-text-hover);
+}
+
+.application #contact-form p {
+    display: inline;
+    font-size: 1.6rem;
+    color: var(--color-text-hover);
+    font-weight: var(--font-weight-normal);
+}
+
+.application #contact-form a {
+    display: inline;
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    font-weight: var(--font-weight-normal);
+    transition: 0.3s;
+}
+
+.application #contact-form a:hover {
+	text-shadow: 0 0 8px var(--color-secondary);
+}
+
+.application #contact-form .checkbox-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.application #contact-form .checkbox-area {
+    display: flex;
+    gap: 1rem;
+}
+
+.application #contact-form .checkbox-area input {
+    width: 1.5rem;
+    height: auto;
+}
+
+.application #contact-form .msg-checkbox {
+    font-size: 1.4rem;
+    margin-top: -0.6rem;
+}
+
+.application #contact-form .msg-us {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/*  834px - 1068px - Laptop Sections */
+@media screen and (min-width: 834px) and (max-width: 1068px) {
+
+    /* Visuals Starting */
+    #eclipse-apply-top {
+        left: -150px;
+    }
+}
+
+
+
+/*  576px - 833px - Tablet Sections */
+@media screen and (min-width: 576px) and (max-width: 833px) {
+
+    /* Visuals Starting */
+    #eclipse-apply-top {
+        left: -250px;
+    }
+
+    .application {
+        padding: 2.5rem 0 5rem 0;
+    }
+}
+
+
+
+/*  575px and Lower - Mobile Sections */
+@media screen and (max-width: 575px) {
+
+    /* Visuals Starting */
+    #eclipse-apply-top {
+        left: -150px;
+    }
+
+    .application {
+        padding: 2.5rem 0 5rem 0;
+    }
+
+    .application .card-left {
+        display: none;
+    }
+
+    .application .card-right {
+        width: 100%;
+        height: 100%;
+        padding: 2rem 2rem;
+    }
+
+    .application #contact-form h2 {
+        font-size: 2rem;
+    }
+
+    .application #contact-form .sub-title {
+        font-size: 1.4rem;
+    }
+}

@@ -64,10 +64,9 @@ img {
     --color-secondary: #39FAFA;
     --color-border: rgb(42, 45, 51);
     
-    --color-dark: rgb(6, 7, 10);
-    --color-btn-dark: rgb(12, 14, 20);
-    --color-btn-dark-header: rgba(12, 14, 20, 0.8);
-    --color-btn-light: rgb(32,39,55);
+    --color-dark: rgb(14,16,21);
+    --color-btn-dark: rgb(20,23,31);
+    --color-btn-light: rgb(24, 29, 38);
 
     --color-text-dark: rgb(140, 141, 143);
     --color-text-hover: rgb(203, 203, 204);
@@ -76,7 +75,7 @@ img {
     --color-linear-1: linear-gradient(to left, var(--color-primary), var(--color-secondary));
     --color-linear-1-2: linear-gradient(to right, var(--color-primary), var(--color-secondary));
     --color-linear-2: linear-gradient(199deg, var(--color-primary) -100%, var(--color-btn-dark) 100%, var(--color-primary) 50%);
-    --color-linear-3: linear-gradient(to left, var(--color-text-light), var(--color-text-hover));
+    --color-linear-3: linear-gradient(to left, var(--color-text-hover), var(--color-text-light));
     /* Font weights */
     --font-weight-normal: 400;
     --font-weight-bold: 700;
@@ -84,9 +83,9 @@ img {
     /* Font families */
     --font-family-1: 'Lato', sans-serif;
     --font-family-2: 'Montserrat', sans-serif;
-    /* FeedbacksSlider Settings */
+    /* TestimonialsSlider Settings */
     --slide-card-count: 4;
-    --slide-scroll-duration: 60s;
+    --slide-scroll-duration: 40s;
     --slide-height: 26rem;
     --slide-card-height: 26rem;
     --slide-width: 52rem;
