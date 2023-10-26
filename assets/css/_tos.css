@@ -134,10 +134,13 @@
 @media screen and (min-width: 576px) and (max-width: 833px) {
 
     /* Visuals Starting */
-    #eclipse-tos-top {
-        left: -250px;
+    #eclipse-tos-top,
+    #eclipse-tos-left1,
+    #eclipse-tos-right1 {
+        display: none;
     }
 
+    /* Tos section */
     .tos {
         padding: 2.5rem 0 5rem 0;
     }
@@ -162,10 +165,13 @@
 @media screen and (max-width: 575px) {
 
     /* Visuals Starting */
-    #eclipse-tos-top {
-        left: -150px;
+    #eclipse-tos-top,
+    #eclipse-tos-left1,
+    #eclipse-tos-right1 {
+        display: none;
     }
 
+    /* Tos section */
     .tos {
         padding: 2.5rem 0 5rem 0;
     }

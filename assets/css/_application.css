@@ -175,9 +175,10 @@
 
     /* Visuals Starting */
     #eclipse-apply-top {
-        left: -250px;
+        display: none;
     }
 
+    /* Application section */
     .application {
         padding: 2.5rem 0 5rem 0;
     }
@@ -190,9 +191,10 @@
 
     /* Visuals Starting */
     #eclipse-apply-top {
-        left: -150px;
+        display: none;
     }
 
+    /* Application section */
     .application {
         padding: 2.5rem 0 5rem 0;
     }

@@ -807,13 +807,9 @@
 @media screen and (min-width: 576px) and (max-width: 833px) {
 
     /* Visuals Starting */
-    #eclipse-top {
-        left: -250px;
-    }
-
+    #eclipse-top,
     #eclipse-left1,
-    #eclipse-right1,
-    #eclipse-right2 {
+    #eclipse-right1 {
         display: none;
     }
 
@@ -822,7 +818,7 @@
     #eclipse-middle-2,
     #eclipse-middle-3,
     #eclipse-middle-4,
-    #eclipse-middle-5, {
+    #eclipse-middle-5 {
         display: none;
     }
 
@@ -997,13 +993,9 @@
 @media screen and (max-width: 575px) {
 
     /* Visuals Starting */
-    #eclipse-top {
-        left: -250px;
-    }
-
+    #eclipse-top,
     #eclipse-left1,
-    #eclipse-right1,
-    #eclipse-right2 {
+    #eclipse-right1 {
         display: none;
     }
 
@@ -1012,7 +1004,7 @@
     #eclipse-middle-2,
     #eclipse-middle-3,
     #eclipse-middle-4,
-    #eclipse-middle-5, {
+    #eclipse-middle-5 {
         display: none;
     }
 
